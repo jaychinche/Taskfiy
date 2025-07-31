@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #e0e7ff 0%, #f3e8ff 100%);
+}
+.auth-container, .todo-container {
+  max-width: 400px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+  padding: 32px 24px;
+}
+.auth-form, .todo-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.auth-form input, .todo-inputs input, .todo-inputs select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 16px;
+}
+.auth-form button, .todo-inputs button, .logout-btn, .delete-btn {
+  background: linear-gradient(135deg, #3b82f6 0%, #9333ea 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.auth-form button:hover, .todo-inputs button:hover, .logout-btn:hover, .delete-btn:hover {
+  background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+}
+.todo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.todo-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #f3f4f6;
+}
+.todo-list li.completed span {
+  text-decoration: line-through;
+  color: #888;
+}
+.error {
+  color: #ef4444;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
